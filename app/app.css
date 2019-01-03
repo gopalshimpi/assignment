@@ -1,25 +1,22 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+.card-grid {
+  flex-grow: 1;
+  min-width: 200px;
+  height: 200px;
+  margin: 2rem 0;
 }
 
-.menu:before {
-  content: "[";
+.side-card {
+  height: 100%; 
+  width: 100%; 
+  margin: 2rem 0;
+  justify-content: center;  
 }
 
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+.img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
