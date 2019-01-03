@@ -1,1 +1,6 @@
-<h1>Multiple Product</h1>
+<div class="row">
+  <div class="col" ng-repeat="info in data | limitTo : 4 : 1 ">
+    <img src="http://picsum.photos/300/258?{{info.imageUrl}}">
+    <p>{{info.title}}</p>
+  </div>
+</div>

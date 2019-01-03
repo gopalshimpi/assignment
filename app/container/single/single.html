@@ -1,1 +1,4 @@
-<h1>Single Product</h1>
+<div ng-repeat="info in data | limitTo : 1">
+  <img src="http://picsum.photos/300/258?{{info.imageUrl}}">
+  <p>{{info.title}}</p>
+</div>
